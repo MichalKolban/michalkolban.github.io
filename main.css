@@ -1,0 +1,1009 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: #111;
+    color: #e1e1e1;
+    font-family: 'Overpass', sans-serif;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+/* MAIN PAGE  */
+
+.hello {
+    font-size: 7.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 10vh 0 0 3vh;
+    cursor: default;
+}
+
+
+.logo {
+    width: calc(100% - 3vw);
+    /* margin-top: 21vh;   */
+    margin: 21vh 3vh 0 0;
+    font-weight: 200;
+    font-size: 5rem;
+    text-align: end;
+    line-height: 5.3rem;
+    text-transform: uppercase;
+    /* margin-right: 3vw; */
+    overflow: hidden;
+}
+
+.logo .l2 {
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 5.1rem;
+}
+
+.logo .l2 span {
+    display: block;
+}
+
+.animationArrow {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.7rem;
+    opacity: .7;
+    animation: motionArrow 1.2s linear infinite;
+}
+
+.hideAnimation {
+    display: none;
+}
+
+/* LINKI  */
+
+.links {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 4.5rem;
+    font-weight: 600;
+    /* color: #e1e1e1; */
+    margin-top: 23vh;
+}
+
+.links p {
+    font-size: 14.3rem;
+    line-height: 14.3rem;
+    margin: 0 auto 10vh auto;
+    font-weight: 500;
+    letter-spacing: 1px;
+    opacity: .3;
+    overflow: hidden;
+}
+
+.links ul {
+    list-style: none;
+}
+
+.links ul li {
+    margin-top: 5px;
+    
+}
+
+.links ul li a {
+    color: #e1e1e1;
+    margin-left: 7vw;
+    font-size: 5.5rem;
+    text-decoration: none;
+    transition: .5s;
+    font-weight: 200;
+}
+
+.links ul li a i {
+    margin-right: 10px;
+    font-size: 4rem;
+    vertical-align: 4px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+}
+
+.links ul li a:hover {
+    color: #e5504c;
+}
+
+/* CODE ICON */
+
+.outer {
+    position: relative;
+    overflow: hidden;
+    /* margin-top: 30vh; */
+    /* margin-bottom: 50px; */
+    margin: 30vh 0 50px 0;
+    height: 30vh;
+    width: 100%;
+}
+
+.codeIcon {
+    position: absolute;
+    font-size: 10rem;
+    right: -5vw;
+    top: 10vh;
+    opacity: .1;
+    overflow: hidden;
+}
+
+/* RECENTWORK LIST */
+
+.recentworkList {
+    margin-left: 3vw;
+}
+
+.recentworkList p {
+    font-size: 3.3rem;
+}
+
+.recentworkList ul {
+    list-style: none;
+}
+
+.recentworkList li a {
+    text-decoration: none;
+    color: #e1e1e1;
+    text-decoration: none;
+    font-size: 2.5rem;
+    transition: .5s;
+}
+
+.recentworkList li a span {
+    display: inline-block;
+    font-size: 1.6rem;
+    vertical-align: 5px;
+    width: 24px;
+    opacity: .8;
+}
+
+.recentworkList ul li:nth-of-type(even) a {
+    font-size: 1.8rem;
+    /* margin-left: 25px; */
+    /* margin-bottom: 20px; */
+    /* margin-top: 10px; */
+    margin: 10px 0 20px 25px;
+}
+
+.recentworkList li a:hover {
+    color: #e5504c;
+}
+
+/* SKILLS  */
+
+.skillbox {
+    position: relative;
+    box-sizing: border-box;
+    margin-top: 30vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.skillbox .skillsbig {
+    position: absolute;
+    margin-left: -9vw;
+    font-size: 9.4rem;
+    white-space: nowrap;
+    font-weight: 400;
+    overflow: hidden;
+    opacity: .2;
+}
+
+.skillbox .skillssmall {
+    position: absolute;
+    left: 9%;
+    top: 6%;
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+
+/* SKILLS ICONS */
+
+.technologybox {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin: 120px auto 50px auto;
+    width: 90%;
+    overflow: visible;
+}
+
+.technologybox p {
+    margin: 10px 0;
+    text-align: center;
+    width: 49.5%;
+    font-size: 2.8rem;
+}
+
+.technologybox p i {
+    margin: 9px 0;
+    font-size: 6.3rem;
+    display: block;
+}
+
+.technologybox p:last-of-type {
+    font-size: 2rem;
+    opacity: .6;
+    margin-top: 25px;
+    font-weight: 300;
+}
+
+
+/* CONTACT ME  */
+
+.contact {
+    margin-top: 70px;
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.contact p i {
+    font-size: 6rem;
+}
+
+.contact p:last-of-type{
+    margin-top: 30px;
+    font-weight: 200;
+}
+
+/* filecode IMG  */
+
+.filecodeIcon {
+    margin: 50px 0 0 -30px;
+    /* margin-top: 50px; */
+    font-size: 14rem;
+    opacity: .1;
+    /* margin-left: -30px; */
+    overflow: hidden;
+}
+
+/* UPARROW */
+
+.uparrow {
+    box-sizing: border-box;
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    width: 50px;
+    height: 50px;
+    border: 3px solid white;
+    animation: glowing 1.8s infinite linear;
+}
+
+.uparrow i {
+    font-size: 4rem;
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+    transform: rotate(180deg) translateY(10%);
+}
+
+
+/* FOOTER  */
+
+footer {
+    box-sizing: border-box;
+    color: white;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+/* ANIMATIONS  */
+
+@keyframes motionArrow {
+0% {
+    top: 90%;
+    opacity: 0;
+}
+
+10% {
+    top: 91%;
+}
+20% {
+    top: 92%;
+    opacity: 0;
+}
+30% {
+    top: 93%;
+    opacity: .5;
+}
+40% {
+    top: 94%;
+    opacity: 0.7;
+}
+50% {
+    top: 95%;
+    opacity: .7;
+}
+60% {
+    top: 96%;
+    opacity: 0.7;
+}
+70% {
+    top: 97%;
+    opacity: .5;
+}
+80%{
+    top: 98%;
+    opacity: 0;
+}
+90% {
+    top: 99%;
+}
+100% {
+    top: 100%;
+    opacity: 0;
+}
+}
+
+@keyframes glowing {
+    0% {
+        opacity: 1;
+    }
+    20%{
+        opacity: .9;
+    }
+    40%{
+        opacity: .7;
+    }
+    50% {
+        opacity: .5;
+    }
+}
+
+/* MEDIA QUERIES  */
+/* PORTRAIT */
+
+@media (min-width: 322px) and (orientation: portrait){
+    .logo {
+        /* margin-top: 30vh;  */
+        margin-bottom: 5vh;
+    }
+    .skillbox .skillssmall {
+        font-size: 4rem;
+    }
+} 
+
+@media (min-width: 361px) and (orientation: portrait){
+    .hello {
+        font-size: 9.2rem;
+        /* border: 2px solid pink; */
+    }
+    .logo {
+        font-size: 6.3rem;
+        /* margin-top: 27vh;  */
+        margin-bottom: 5vh;
+        line-height: 6.6rem;
+    }
+    .logo .l2 {
+        font-size: 6.9rem;
+    }
+    .skillbox .skillsbig {
+        margin-left: -5vw;
+    }
+    .skillbox .skillssmall {
+        font-size: 4rem;
+    }
+    .recentworkList p {
+        font-size: 4.3rem;
+    }
+    .recentworkList li a {
+        font-size: 3.1rem;
+    }
+    .recentworkList ul li:nth-of-type(even) a {
+        font-size: 2.8rem;
+        margin-left: 36px;
+    }
+    .recentworkList li a span {
+        font-size: 2.3rem;
+        width: 35px;
+    }
+    .technologybox p i {
+        font-size: 7.3rem;
+    }
+    .technologybox p {
+        font-size: 3.3rem;
+    }
+    .technologybox p:last-of-type {
+        font-size: 2.5rem;
+    }
+    .contact p:last-of-type {
+        font-size: 2.8rem;
+    }
+} 
+
+@media (min-width: 412px) and (orientation: portrait){
+    .skillbox .skillsbig {
+        margin-left: 1vw;
+    }
+}
+
+@media (min-width: 416px) and (orientation: portrait){
+    .hello {
+        font-size: 14.2rem;
+    }
+    .logo {
+        /* margin-top: 20vh;   */
+        margin-bottom: 5vh;
+        font-size: 10rem;
+        line-height: 10.3rem;
+    }
+    .logo .l2 {
+        font-size: 10.1rem;
+    }
+    .animationArrow {
+        font-size: 8.7rem;
+    }
+    .codeIcon {
+        font-size: 16rem;
+    }
+    .recentworkList p {
+        font-size: 6.3rem;
+    }
+    .recentworkList li a {
+        font-size: 5.4rem;
+    }
+    .recentworkList ul li:nth-of-type(even) a {
+        font-size: 4.8rem;
+        margin-left: 60px;
+    }
+    .recentworkList li a span {
+        font-size: 4.3rem;
+        width: 60px;
+    }
+    .links p {
+        font-size: 15.3rem;
+        margin-left: 5%;
+    }
+    .links ul li a {
+        margin-left: 7vw;
+        font-size: 8.5rem;
+    }
+    .links ul li a i {
+        margin-right: 25px;
+        font-size: 6rem;
+        vertical-align: 7px;
+    }
+    .skillbox .skillsbig {
+        margin-left: 3vw;
+        font-size: 11.4rem;
+    }
+    .skillbox .skillssmall {
+        font-size: 5rem;
+        top: 5%;
+    }
+    .technologybox {
+        margin-top: 180px;
+    }
+    .technologybox p {
+        font-size: 4.8rem;
+    }
+    .technologybox p i {
+        font-size: 11.3rem;
+    }
+    .technologybox p:last-of-type {
+        margin-top: 100px;
+        font-size: 4rem;
+    }
+    .contact {
+        font-size: 2.5rem;
+    }
+    .contact p i {
+        font-size: 9rem;
+    }
+    .contact p:last-of-type{
+    font-size: 3.8rem;
+    }
+    footer {
+        font-size: 2.4rem;
+    }
+    .uparrow {
+        width: 70px;
+        height: 70px;
+    }
+    .uparrow i {
+        font-size: 5rem;
+        line-height: 70px;
+    }
+}
+
+@media (min-width: 770px) and (orientation: portrait){
+    .hello {
+        font-size: 18.2rem;
+    }
+    .logo {
+        /* margin-top: 25vh;   */
+        margin-bottom: 5vh;
+        font-size: 13rem;
+        line-height: 13rem;
+    }
+    .logo .l2 {
+        font-size: 13.1rem;
+    }
+    .recentworkList p {
+        font-size: 7.3rem;
+    }
+    .recentworkList li a {
+        font-size: 6.4rem;
+    }
+    .recentworkList ul li:nth-of-type(even) a {
+        font-size: 5.8rem;
+        margin-left: 70px;
+    }
+    .recentworkList li a span {
+        font-size: 5.3rem;
+        width: 70px;
+    }
+    .skillbox .skillsbig {
+        margin-left: 3vw;
+        font-size: 13.4rem;
+    }
+    .skillbox .skillssmall {
+        font-size: 7rem;
+        top: 5%;
+    }
+    .technologybox p {
+        font-size: 6.8rem;
+    }
+    .technologybox p i {
+        font-size: 13.3rem;
+    }
+    .technologybox p:last-of-type {
+        font-size: 5rem;
+    }
+    .contact {
+        font-size: 4.5rem;
+    }
+    .contact p i {
+        font-size: 11rem;
+    }
+    .contact p:last-of-type{
+    font-size: 5.8rem;
+    }
+    footer {
+        font-size: 3.4rem;
+    }
+    .uparrow {
+        width: 100px;
+        height: 100px;
+    }
+    .uparrow i {
+        font-size: 7.5rem;
+        line-height: 100px;
+    }
+}
+
+/* HORIZONTAL  */
+
+
+@media (min-width: 530px) and (orientation: landscape){
+    .hello {
+        margin-top: 8vh;
+    }
+    .logo {
+        margin-top: 4vh;  
+    }
+    .logo .l2 span {
+        display: inline;
+    }
+    .outer {
+        height: 50vh;
+    }
+    /* .recentwork p { */
+        /* font-size: 4.3rem; */
+    /* } */
+    /* .recentwork a { */
+        /* font-size: 3rem; */
+    /* } */
+    /* .recentwork a span { */
+        /* font-size: 2.1rem; */
+        /* width: 35px; */
+    /* } */
+    /* .recentwork a:nth-of-type(even){ */
+        /* font-size: 2.3rem; */
+        /* margin-left: 35px; */
+    /* } */
+    .recentworkList p {
+        font-size: 4.3rem;
+    }
+    .recentworkList li a {
+        font-size: 3.4rem;
+    }
+    .recentworkList ul li:nth-of-type(even) a {
+        font-size: 2.8rem;
+        margin-left: 36px;
+    }
+    .recentworkList li a span {
+        font-size: 2.3rem;
+        width: 35px;
+    }
+
+    .skillbox .skillsbig {
+        margin-left: -4vw;
+    }
+    .skillbox .skillssmall{
+        left: 11%;
+        top: 8%;
+    }
+
+}
+
+@media (min-width: 534px) and (orientation: landscape){
+    .hello {
+        margin-top: 8vh;
+    }
+    .logo {
+        margin-top: 4vh;  
+    }
+    .logo .l2 span {
+        display: inline;
+    }
+    .outer {
+        height: 50vh;
+    }
+    /* .recentwork p { */
+        /* font-size: 4.3rem; */
+    /* } */
+    /* .recentwork a { */
+        /* font-size: 3rem; */
+    /* } */
+    /* .recentwork a span { */
+        /* font-size: 2.1rem; */
+        /* width: 35px; */
+    /* } */
+    /* .recentwork a:nth-of-type(even){ */
+        /* font-size: 2.3rem; */
+        /* margin-left: 35px; */
+    /* } */
+    .recentworkList p {
+        font-size: 4.3rem;
+    }
+    .recentworkList li a {
+        font-size: 3.4rem;
+    }
+    .recentworkList ul li:nth-of-type(even) a {
+        font-size: 2.8rem;
+        margin-left: 36px;
+    }
+    .recentworkList li a span {
+        font-size: 2.3rem;
+        width: 35px;
+    }
+
+    .skillbox .skillsbig {
+        margin-left: -4vw;
+    }
+    .skillbox .skillssmall{
+        left: 11%;
+        top: 8%;
+    }
+    .technologybox p {
+        font-size: 3.8rem;
+    }
+    .technologybox p i {
+        font-size: 7.3rem;
+    }
+}
+
+@media (min-width: 641px) and (orientation: landscape){
+    .hello {
+        margin-top: 8vh;
+    }
+    .logo {
+        margin-top: 20vh;  
+    }
+    .logo .l2 span {
+        display: inline;
+    }
+    .outer {
+        height: 50vh;
+    }
+    /* .recentwork p {
+        font-size: 4.8rem;
+    }
+    .recentwork a {
+        font-size: 3.5rem;
+    }
+    .recentwork a span {
+        font-size: 2.6rem;
+        width: 45px;
+    }
+    .recentwork a:nth-of-type(even){
+        font-size: 2.8rem;
+        margin-left: 45px;
+    } */
+    .recentworkList p {
+        font-size: 5.3rem;
+    }
+    .recentworkList li a {
+        font-size: 4rem;
+    }
+    .recentworkList ul li:nth-of-type(even) a {
+        font-size: 3.5rem;
+        margin-left: 45px;
+    }
+    .recentworkList li a span {
+        font-size: 3.3rem;
+        /* width: 35px; */
+        width: 45px;
+    }
+
+    .skillbox .skillsbig {
+        margin-left: -4vw;
+    }
+    .skillbox .skillssmall{
+        left: 8%;
+        top: 7%;
+    }
+    .technologybox p {
+        font-size: 4.3rem;
+    }
+    .technologybox p i {
+        font-size: 7.8rem;
+    }
+    .technologybox p:last-of-type {
+        font-size: 3rem;
+    }
+    .contact p:last-of-type {
+        font-size: 3.5rem;
+    }
+}
+
+@media (min-width: 732px) and (orientation: landscape){
+    .hello{
+        font-size: 10.2rem;
+        margin-top: 7vh;
+    }
+    .logo{
+        margin-top: 8vh;
+        font-size: 6rem;
+    }
+    .logo .l2 span {
+        display: inline;
+    }
+    .logo .l2 {
+        font-size: 6.1rem;
+    }
+    .codeIcon {
+        right: -2vw;
+    }
+    /* .recentwork p {
+        font-size: 5.3rem;
+    }
+    .recentwork a {
+        font-size: 4rem;
+    }
+    .recentwork a span {
+        font-size: 3.2rem;
+        width: 45px;
+    }
+    .recentwork a:nth-of-type(even){
+        font-size: 3.5rem;
+        margin-left: 45px;
+    } */
+    .links ul li a {
+        font-size: 6.5rem;
+    }
+    .skillbox .skillsbig {
+        margin-left: -2vw;
+        font-size: 10.4rem;
+    }
+    .skillbox .skillssmall {
+        top: 6%;
+        font-size: 5rem;
+    }
+    .technologybox p {
+        font-size: 4.3rem;
+    }
+    .technologybox p i {
+        font-size: 8.8rem;
+    }
+    .technologybox p:last-of-type {
+        font-size: 3rem;
+    }
+    .contact p i {
+        font-size: 8rem;
+    }
+    footer {
+        font-size: 2rem;
+    }
+    .uparrow {
+        right: 3%;
+        width: 60px;
+        height: 60px;
+    }
+    .uparrow i {
+        font-size: 4.5rem;
+        line-height: 60px;
+    }
+}
+
+@media (min-width: 900px) and (orientation: landscape) {
+    .hello{
+        font-size: 12.2rem;
+        margin-top: 9vh;
+    }
+    .logo{
+        margin-top: 23vh;
+        font-size: 9rem;
+        line-height: 9.3rem;
+    }
+    .logo .l2 {
+        font-size: 9.1rem;
+    }
+    .animationArrow {
+        font-size: 5.7rem;
+    }
+    .codeIcon {
+        font-size: 14rem;
+        right: -2vw;
+    }
+    /* .recentwork p {
+        font-size: 6.3rem;
+    }
+    .recentwork a {
+        font-size: 4.5rem;
+    }
+    .recentwork a:nth-of-type(even) {
+        font-size: 3.8rem;
+        margin-left: 50px;
+    }
+    .recentwork a span {
+        font-size: 3.5rem;
+        vertical-align: 5px;
+        width: 50px;
+    } */
+
+    .recentworkList p {
+        font-size: 6.3rem;
+    }
+    .recentworkList li a {
+        font-size: 4.5rem;
+    }
+    .recentworkList ul li:nth-of-type(even) a {
+        font-size: 3.8rem;
+        margin-left: 50px;
+    }
+    .recentworkList li a span {
+        font-size: 3.5rem;
+        width: 50px;
+    }
+
+
+
+    .links ul li a {
+        font-size: 7.5rem;
+    }
+    .links ul li a i {
+        margin-right: 15px;
+        font-size: 5rem;
+    }
+    .skillbox .skillsbig {
+        margin-left: -2vw;
+        font-size: 11.4rem;
+    }
+    .skillbox .skillssmall {
+        left: 6%;
+        top: 5%;
+        font-size: 5rem;
+    }
+    .technologybox {
+        margin-top: 23vh;
+    }
+    .technologybox p {
+        font-size: 4.8rem;
+    }
+    .technologybox p i {
+        font-size: 9.3rem;
+    }
+    .technologybox p:last-of-type {
+        margin-top: 6vh;
+        font-size: 3.8rem;
+    }
+    .contact {
+        font-size: 3.5rem;
+    }
+    .contact p i {
+        font-size: 8rem;
+    }
+    footer {
+        font-size: 2.2rem;
+    }
+    .uparrow {
+        right: 3%;
+        width: 70px;
+        height: 70px;
+    }
+    .uparrow i {
+        font-size: 5.5rem;
+        line-height: 70px;
+    }
+}
+
+@media (min-width: 1025px) and (orientation: landscape){
+    .hello {
+        font-size: 14.2rem;
+    }
+    .logo{
+        margin-top: 30vh;
+        font-size: 11rem;
+        line-height: 11.3rem;
+    }
+    .logo .l2 {
+        font-size: 11.1rem;
+    }
+    .outer {
+        height: 35vh;
+    }
+    .links {
+        margin-top: 30vh;
+    }
+    .skillbox .skillsbig{
+        font-size: 13.4rem;
+    }
+    .skillbox .skillssmall {
+        left: 8%;
+        top: 5%;
+        font-size: 6rem;
+    }
+    .uparrow {
+        right: 3%;
+        bottom: 4%;
+    }
+}
+
+@media (min-width: 1368px) and (orientation: landscape){
+    .hello {
+        margin-top: 8vh;
+        font-size: 14.2rem;
+    }
+    .logo{
+        margin-top: 21vh;
+        font-size: 11rem;
+        line-height: 11.3rem;
+    }
+    .logo .l2 {
+        font-size: 11.1rem;
+    }
+    .animationArrow {
+        font-size: 5.7rem;
+    }
+    .codeIcon {
+        font-size: 18rem;
+    }
+    .links ul li a:hover {
+        color: #e5504c;
+    }
+    .recentworkList ul li a {
+        font-size: 4.5rem;
+    }
+    .recentworkList ul li a:nth-of-type(even) {
+        font-size: 3.8rem;
+        margin-left: 50px;
+    }
+}
+
+@media(min-width: 1400px){
+    .skillbox .skillsbig{
+        margin-left: 3vw;
+    }
+}
