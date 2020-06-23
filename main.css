@@ -158,12 +158,17 @@ body {
     transition: .5s;
 }
 
-.recentworkList li a span {
+
+.recentworkList li span {
     display: inline-block;
     font-size: 1.6rem;
     vertical-align: 5px;
     width: 24px;
     opacity: .8;
+}
+
+.recentworkList li a span:nth-of-type(2){
+    display: none;
 }
 
 .recentworkList ul li:nth-of-type(even) a {
@@ -372,6 +377,10 @@ footer {
     }
     .skillbox .skillssmall {
         font-size: 4rem;
+    }
+    .recentworkList li a span:nth-of-type(2){
+        display: inline-block;
+        width: 24px;
     }
 } 
 
