@@ -25,8 +25,6 @@ body {
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 1px;
-    /* margin-left: 3vw; */
-    /* margin-top: 10vh; */
     margin: 10vh 0 0 3vh;
     cursor: default;
 }
@@ -34,14 +32,12 @@ body {
 
 .logo {
     width: calc(100% - 3vw);
-    /* margin-top: 21vh;   */
     margin: 21vh 3vh 0 0;
     font-weight: 200;
     font-size: 5rem;
     text-align: end;
     line-height: 5.3rem;
     text-transform: uppercase;
-    /* margin-right: 3vw; */
     overflow: hidden;
 }
 
@@ -126,8 +122,6 @@ body {
 .outer {
     position: relative;
     overflow: hidden;
-    /* margin-top: 30vh; */
-    /* margin-bottom: 50px; */
     margin: 30vh 0 50px 0;
     height: 30vh;
     width: 100%;
@@ -174,10 +168,7 @@ body {
 
 .recentworkList ul li:nth-of-type(even) a {
     font-size: 1.8rem;
-    /* margin-left: 25px; */
-    /* margin-bottom: 20px; */
-    /* margin-top: 10px; */
-    margin: 10px 0 20px 25px
+    margin: 10px 0 20px 25px;
 }
 
 .recentworkList li a:hover {
@@ -269,10 +260,8 @@ body {
 
 .filecodeIcon {
     margin: 50px 0 0 -30px;
-    /* margin-top: 50px; */
     font-size: 14rem;
     opacity: .1;
-    /* margin-left: -30px; */
     overflow: hidden;
 }
 
@@ -379,7 +368,6 @@ footer {
 
 @media (min-width: 322px) and (orientation: portrait){
     .logo {
-        /* margin-top: 30vh;  */
         margin-bottom: 5vh;
     }
     .skillbox .skillssmall {
@@ -393,7 +381,6 @@ footer {
     }
     .logo {
         font-size: 6.3rem;
-        /* margin-top: 27vh;  */
         margin-bottom: 5vh;
         line-height: 6.6rem;
     }
@@ -420,6 +407,7 @@ footer {
         font-size: 2.3rem;
         width: 35px;
     }
+
     .technologybox p i {
         font-size: 7.3rem;
     }
@@ -445,7 +433,6 @@ footer {
         font-size: 14.2rem;
     }
     .logo {
-        /* margin-top: 20vh;   */
         margin-bottom: 5vh;
         font-size: 10rem;
         line-height: 10.3rem;
@@ -464,6 +451,7 @@ footer {
     }
     .recentworkList li a {
         font-size: 5.4rem;
+
     }
     .recentworkList ul li:nth-of-type(even) a {
         font-size: 4.8rem;
@@ -473,6 +461,7 @@ footer {
         font-size: 4.3rem;
         width: 60px;
     }
+
     .links p {
         font-size: 15.3rem;
         margin-left: 5%;
