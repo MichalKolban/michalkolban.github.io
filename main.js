@@ -2,6 +2,11 @@ const animationArrow = document.querySelector('.animationArrow');
 const upArrow = document.querySelector('.uparrow');
 const docHeight = document.body.scrollHeight
 
+const typingTxt = document.querySelector('.text');
+const underscoreTxt = document.querySelector('.underscore');
+
+const showText = "Design, Create, Deploy";
+
 window.addEventListener("scroll", function(event){
     let scroll = this.scrollY;
     // console.log(scroll);
@@ -28,3 +33,27 @@ upArrow.addEventListener("click", function(){
     console.log("clisked");
     document.documentElement.scrollTop = 0;
 });
+
+const underscoreAnimation = () => {
+    underscoreTxt.classList.toggle('activeunderscore');
+}
+
+setInterval(underscoreAnimation, 500);
+
+let typingIndex = 0;
+
+const typingAnimation = () => {
+    if (typingIndex >= 0) {
+        if (typingIndex === showText.length) {
+            console.log("Text content w środku" + typingTxt.textContent);
+            return setTimeout(() => {
+                typingIndex = -1;
+                typingTxt.textContent = '';
+            }, 1500);
+        }
+        typingTxt.textContent += showText[typingIndex];
+    }
+    typingIndex++;
+    }
+    
+setInterval(typingAnimation, 100);

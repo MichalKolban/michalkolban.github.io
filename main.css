@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +20,7 @@ body {
 /* MAIN PAGE  */
 
 .hello {
-    width: calc(100% - 3vw);
+    /* width: calc(100% - 3vw); */
     font-size: 7.2rem;
     text-transform: uppercase;
     font-weight: 700;
@@ -54,6 +54,7 @@ body {
 .animationArrow {
     position: absolute;
     top: 95%;
+    /* bottom: 15%; */
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 3.7rem;
@@ -63,6 +64,30 @@ body {
 
 .hideAnimation {
     display: none;
+}
+
+/* TYPING ANIMATION */
+
+.typingbox{
+    width: 95%;
+    height: 100px;
+    margin: 0 auto 200px auto;
+    font-size: 5.3rem;
+    text-align: center;
+    color: rgba(255, 255, 255, .2);
+    /* font-family: 'Montserrat', sans-serif;  LEAVE IT */
+    font-weight: 600;
+}
+
+.underscore {
+  opacity: 0;
+  transition: .2s;
+  color: #ff9f1c;  
+  /* color: #e5504c; */
+}
+
+.activeunderscore{
+    opacity: 1;
 }
 
 /* LINKI  */
@@ -114,7 +139,8 @@ body {
 }
 
 .links ul li a:hover {
-    color: #e5504c;
+    /* color: #e5504c; */
+    color: #ff9f1c; 
 }
 
 /* CODE ICON */
@@ -177,7 +203,8 @@ body {
 }
 
 .recentworkList li a:hover {
-    color: #e5504c;
+    /* color: #e5504c; */
+    color: #ff9f1c; 
 }
 
 /* SKILLS  */
@@ -296,7 +323,7 @@ body {
 
 footer {
     box-sizing: border-box;
-    color: white;
+    color: rgba(255,255,255, .4);
     margin-bottom: 5px;
     text-align: center;
     font-size: 1.4rem;
@@ -375,6 +402,9 @@ footer {
     .logo {
         margin-bottom: 5vh;
     }
+    .typingbox{
+        font-size: 3.5rem;
+    }
     .skillbox .skillssmall {
         font-size: 4rem;
     }
@@ -387,6 +417,7 @@ footer {
 @media (min-width: 361px) and (orientation: portrait){
     .hello {
         font-size: 9.2rem;
+        margin-top: 5vh;
     }
     .logo {
         font-size: 6.3rem;
@@ -395,6 +426,15 @@ footer {
     }
     .logo .l2 {
         font-size: 6.9rem;
+    }
+    .animationArrow{
+        top: 98%;
+    }
+    .logo {
+    margin-top: 18vh;
+    }
+    .typingbox {
+        font-size: 3.2rem;
     }
     .skillbox .skillsbig {
         margin-left: -5vw;
@@ -454,6 +494,9 @@ footer {
     }
     .codeIcon {
         font-size: 16rem;
+    }
+    .typingbox{
+        font-size: 5.3rem;
     }
     .recentworkList p {
         font-size: 6.3rem;
@@ -605,6 +648,9 @@ footer {
     }
     .logo .l2 span {
         display: inline;
+    }
+    .typingbox{
+        font-size: 3.5rem;
     }
     .outer {
         height: 50vh;
@@ -992,7 +1038,8 @@ footer {
         font-size: 18rem;
     }
     .links ul li a:hover {
-        color: #e5504c;
+        /* color: #e5504c; */
+        color: #ff9f1c; 
     }
     .recentworkList ul li a {
         font-size: 4.5rem;
