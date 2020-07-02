@@ -10,6 +10,7 @@ const showText = "Design, Create, Deploy";
 window.addEventListener("scroll", function(event){
     let scroll = this.scrollY;
     // console.log(scroll);
+    // console.log(scroll);
 
     if(scroll > 250){
         animationArrow.classList.add('hideAnimation');
