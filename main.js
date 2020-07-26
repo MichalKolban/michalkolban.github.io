@@ -29,7 +29,6 @@ window.addEventListener("scroll", function(event){
 })
 
 upArrow.addEventListener("click", function(){
-    console.log("clisked");
     document.documentElement.scrollTop = 0;
 });
 
@@ -44,7 +43,6 @@ let typingIndex = 0;
 const typingAnimation = () => {
     if (typingIndex >= 0) {
         if (typingIndex === showText.length) {
-            console.log("Text content w środku" + typingTxt.textContent);
             return setTimeout(() => {
                 typingIndex = -1;
                 typingTxt.textContent = '';
